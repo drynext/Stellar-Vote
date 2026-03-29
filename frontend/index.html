@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>StellarVote</title>
+</head>
+<body>
+
+<h1>StellarVote</h1>
+
+<input type="number" id="proposal" placeholder="Proposal ID">
+<button onclick="vote()">Vote</button>
+
+<p id="result"></p>
+
+<script>
+async function vote() {
+    const proposal = document.getElementById("proposal").value;
+
+    document.getElementById("result").innerText =
+        "Đã gửi vote cho proposal " + proposal + " (demo)";
+}
+</script>
+
+</body>
+</html>
